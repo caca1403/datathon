@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DATATHON 2025 | Manisa Celal Bayar Üniversitesi</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="FAVİCON/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="FAVİCON/favicon.svg" />
+    <link rel="shortcut icon" href="FAVİCON/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="FAVİCON/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="DATATHON MCBU" />
+    <link rel="manifest" href="/site.webmanifest" />
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+            <div class="shape shape-5"></div>
+        </div>
+        <div class="grid-overlay"></div>
+        <div class="data-particles" id="particles"></div>
+        
+        <!-- Data Visualization Elements -->
+        <div class="data-visuals">
+            <!-- Bar Chart -->
+            <div class="visual-element bar-chart">
+                <div class="bar" style="--height: 60%; --delay: 0s;"></div>
+                <div class="bar" style="--height: 85%; --delay: 0.1s;"></div>
+                <div class="bar" style="--height: 45%; --delay: 0.2s;"></div>
+                <div class="bar" style="--height: 70%; --delay: 0.3s;"></div>
+                <div class="bar" style="--height: 90%; --delay: 0.4s;"></div>
+                <div class="bar" style="--height: 55%; --delay: 0.5s;"></div>
+            </div>
+            
+            <!-- Line Chart -->
+            <div class="visual-element line-chart">
+                <svg viewBox="0 0 200 100" preserveAspectRatio="none">
+                    <polyline class="chart-line" points="0,80 30,60 60,75 90,30 120,45 150,20 180,35 200,10"/>
+                    <polyline class="chart-line-glow" points="0,80 30,60 60,75 90,30 120,45 150,20 180,35 200,10"/>
+                </svg>
+                <div class="data-point" style="left: 15%; top: 60%;"></div>
+                <div class="data-point" style="left: 45%; top: 30%;"></div>
+                <div class="data-point" style="left: 75%; top: 20%;"></div>
+            </div>
+            
+            <!-- Pie Chart -->
+            <div class="visual-element pie-chart">
+                <svg viewBox="0 0 100 100">
+                    <circle class="pie-segment seg-1" cx="50" cy="50" r="40"/>
+                    <circle class="pie-segment seg-2" cx="50" cy="50" r="40"/>
+                    <circle class="pie-segment seg-3" cx="50" cy="50" r="40"/>
+                </svg>
+            </div>
+            
+            <!-- Scatter Plot -->
+            <div class="visual-element scatter-plot">
+                <div class="scatter-dot" style="left: 10%; top: 70%;"></div>
+                <div class="scatter-dot" style="left: 25%; top: 45%;"></div>
+                <div class="scatter-dot" style="left: 40%; top: 60%;"></div>
+                <div class="scatter-dot" style="left: 55%; top: 30%;"></div>
+                <div class="scatter-dot" style="left: 70%; top: 50%;"></div>
+                <div class="scatter-dot" style="left: 85%; top: 25%;"></div>
+                <div class="scatter-dot" style="left: 35%; top: 80%;"></div>
+                <div class="scatter-dot" style="left: 60%; top: 65%;"></div>
+            </div>
+            
+            <!-- Binary Code Stream -->
+            <div class="visual-element binary-stream left">
+                <span>01001</span><span>10110</span><span>01101</span><span>10010</span><span>01011</span>
+            </div>
+            <div class="visual-element binary-stream right">
+                <span>11010</span><span>00101</span><span>10011</span><span>01100</span><span>10101</span>
+            </div>
+            
+            <!-- Data Flow Lines -->
+            <div class="visual-element data-flow">
+                <div class="flow-line"></div>
+                <div class="flow-line"></div>
+                <div class="flow-line"></div>
+            </div>
+            
+            <!-- AI Brain Network -->
+            <div class="visual-element ai-brain">
+                <div class="brain-core">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <div class="neural-ring ring-1"></div>
+                <div class="neural-ring ring-2"></div>
+                <div class="neural-ring ring-3"></div>
+                <div class="synapse s1"></div>
+                <div class="synapse s2"></div>
+                <div class="synapse s3"></div>
+                <div class="synapse s4"></div>
+                <div class="synapse s5"></div>
+                <div class="synapse s6"></div>
+            </div>
+            
+            <!-- Neural Network Connections -->
+            <div class="visual-element neural-network">
+                <div class="neuron n1"><span></span></div>
+                <div class="neuron n2"><span></span></div>
+                <div class="neuron n3"><span></span></div>
+                <div class="neuron n4"><span></span></div>
+                <div class="neuron n5"><span></span></div>
+                <div class="neuron n6"><span></span></div>
+                <div class="neuron n7"><span></span></div>
+                <div class="neuron n8"><span></span></div>
+                <div class="neuron n9"><span></span></div>
+                <svg class="connections">
+                    <line class="conn" x1="20%" y1="20%" x2="50%" y2="50%"/>
+                    <line class="conn" x1="80%" y1="30%" x2="50%" y2="50%"/>
+                    <line class="conn" x1="30%" y1="70%" x2="50%" y2="50%"/>
+                    <line class="conn" x1="70%" y1="80%" x2="50%" y2="50%"/>
+                    <line class="conn" x1="10%" y1="50%" x2="30%" y2="40%"/>
+                    <line class="conn" x1="90%" y1="50%" x2="70%" y2="60%"/>
+                </svg>
+            </div>
+            
+            <!-- Matrix Rain Effect -->
+            <div class="visual-element matrix-rain">
+                <div class="matrix-column" style="left: 5%;"><span>デ</span><span>ー</span><span>タ</span></div>
+                <div class="matrix-column" style="left: 15%;"><span>A</span><span>I</span><span>∞</span></div>
+                <div class="matrix-column" style="left: 85%;"><span>Σ</span><span>π</span><span>Δ</span></div>
+                <div class="matrix-column" style="left: 95%;"><span>λ</span><span>θ</span><span>Ω</span></div>
+            </div>
+            
+            <!-- Floating Data Icons -->
+            <div class="visual-element floating-icons">
+                <div class="float-icon" style="left: 3%; top: 25%;"><i class="fas fa-chart-line"></i></div>
+                <div class="float-icon" style="left: 92%; top: 35%;"><i class="fas fa-robot"></i></div>
+                <div class="float-icon" style="left: 5%; top: 75%;"><i class="fas fa-microchip"></i></div>
+                <div class="float-icon" style="left: 95%; top: 70%;"><i class="fas fa-network-wired"></i></div>
+                <div class="float-icon" style="left: 8%; top: 50%;"><i class="fas fa-code-branch"></i></div>
+                <div class="float-icon" style="left: 88%; top: 15%;"><i class="fas fa-database"></i></div>
+            </div>
+            
+            <!-- Circuit Lines -->
+            <div class="visual-element circuit-board left-circuit">
+                <svg viewBox="0 0 100 200">
+                    <path class="circuit-path" d="M0,20 H30 V50 H60 V30 H100"/>
+                    <path class="circuit-path" d="M0,80 H20 V120 H50 V100 H80 V140 H100"/>
+                    <path class="circuit-path" d="M0,160 H40 V180 H70 V160 H100"/>
+                    <circle class="circuit-node" cx="30" cy="50" r="4"/>
+                    <circle class="circuit-node" cx="60" cy="30" r="4"/>
+                    <circle class="circuit-node" cx="50" cy="100" r="4"/>
+                    <circle class="circuit-node" cx="80" cy="140" r="4"/>
+                </svg>
+            </div>
+            
+            <div class="visual-element circuit-board right-circuit">
+                <svg viewBox="0 0 100 200">
+                    <path class="circuit-path" d="M100,30 H70 V60 H40 V40 H0"/>
+                    <path class="circuit-path" d="M100,100 H60 V130 H30 V110 H0"/>
+                    <path class="circuit-path" d="M100,170 H50 V190 H20 V170 H0"/>
+                    <circle class="circuit-node" cx="70" cy="60" r="4"/>
+                    <circle class="circuit-node" cx="40" cy="40" r="4"/>
+                    <circle class="circuit-node" cx="30" cy="110" r="4"/>
+                </svg>
+            </div>
+            
+            <!-- DNA Helix (representing data structure) -->
+            <div class="visual-element dna-helix">
+                <div class="helix-strand strand-1"></div>
+                <div class="helix-strand strand-2"></div>
+                <div class="helix-base b1"></div>
+                <div class="helix-base b2"></div>
+                <div class="helix-base b3"></div>
+                <div class="helix-base b4"></div>
+                <div class="helix-base b5"></div>
+            </div>
+            
+            <!-- Code Snippets -->
+            <div class="visual-element code-snippet left-code">
+                <span class="code-line"><span class="code-keyword">def</span> analyze_data():</span>
+                <span class="code-line">    <span class="code-func">model</span>.fit(X, y)</span>
+                <span class="code-line">    <span class="code-keyword">return</span> predictions</span>
+            </div>
+            
+            <div class="visual-element code-snippet right-code">
+                <span class="code-line"><span class="code-keyword">import</span> tensorflow</span>
+                <span class="code-line">neural_net = <span class="code-func">Sequential</span>()</span>
+                <span class="code-line">neural_net.<span class="code-func">compile</span>()</span>
+            </div>
+            
+            <!-- Pulsing Data Orbs -->
+            <div class="visual-element data-orb orb-1"></div>
+            <div class="visual-element data-orb orb-2"></div>
+            <div class="visual-element data-orb orb-3"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon"><i class="fas fa-database"></i></span>
+                <span class="logo-text">DATA<span class="highlight">THON</span></span>
+            </div>
+            <ul class="nav-links">
+                <div class="nav-glow"></div>
+                <li><a href="#hero" class="nav-link active">Ana Sayfa</a></li>
+                <li><a href="#about" class="nav-link">Hakkında</a></li>
+                <li><a href="#rules" class="nav-link">Şartname</a></li>
+                <li><a href="#timeline" class="nav-link">Süreç</a></li>
+                <li><a href="#prizes" class="nav-link">Ödüller</a></li>
+                <li><a href="#faq" class="nav-link">SSS</a></li>
+                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeqfkKN9U1Rwd0BO1-HVdOilYZlXWy0-BzhmKEBFYMlgfWxLw/viewform?usp=publish-editor" target="_blank" class="nav-link btn-register">Başvur</a></li>
+            </ul>
+            <!-- Mobile Menu Overlay -->
+            <div class="mobile-menu-overlay">
+                <div class="mobile-menu-links">
+                    <span class="mobile-logo">DATA<span class="highlight">THON</span> <span class="mobile-year">2025</span></span>
+                    <a href="#hero" class="mobile-link">Ana Sayfa</a>
+                    <a href="#about" class="mobile-link">Hakkında</a>
+                    <a href="#rules" class="mobile-link">Şartname</a>
+                    <a href="#timeline" class="mobile-link">Süreç</a>
+                    <a href="#prizes" class="mobile-link">Ödüller</a>
+                    <a href="#faq" class="mobile-link">SSS</a>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeqfkKN9U1Rwd0BO1-HVdOilYZlXWy0-BzhmKEBFYMlgfWxLw/viewform?usp=publish-editor" target="_blank" class="mobile-link mobile-register">Başvur</a>
+                    <div class="mobile-social">
+                        <a href="https://www.instagram.com/mcikistatistik/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="mailto:datathon2025mcbu@gmail.com"><i class="fas fa-envelope"></i></a>
+                    </div>
+                    <span class="mobile-date">19-20 ARALIK</span>
+                </div>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <div class="glitch-wrapper">
+                <h1 class="glitch" data-text="DATATHON">DATATHON</h1>
+            </div>
+            <div class="year-badge">
+                <span class="year">2025</span>
+            </div>
+            <p class="hero-subtitle">
+                <span class="typing-text">Veri Biliminin Geleceğini Şekillendir</span>
+            </p>
+            <div class="hero-stats">
+                <div class="stat-item" data-aos="fade-up">
+                    <div class="stat-icon pulse-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <div class="stat-info">
+                        <span class="stat-text glowing-text">19-20 Aralık</span>
+                        <span class="stat-label">Yarışma Tarihi</span>
+                    </div>
+                </div>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-icon pulse-icon">
+                        <i class="fas fa-hourglass-half"></i>
+                    </div>
+                    <div class="stat-info">
+                        <span class="stat-text glowing-text">28 Saat</span>
+                        <span class="stat-label">Yarışma Süresi</span>
+                    </div>
+                </div>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-icon pulse-icon gold-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div class="stat-info">
+                        <span class="stat-text glowing-text gold">3 Ödül</span>
+                        <span class="stat-label">Kazananlara</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="time-banner">
+                <div class="time-banner-glow"></div>
+                <div class="time-item">
+                    <div class="time-icon start">
+                        <i class="fas fa-play"></i>
+                    </div>
+                    <div class="time-content">
+                        <span class="time-label">BAŞLANGIÇ</span>
+                        <span class="time-value">19 Aralık <span class="time-hour">08:00</span></span>
+                    </div>
+                </div>
+                <div class="time-separator">
+                    <span class="separator-line"></span>
+                    <i class="fas fa-bolt"></i>
+                    <span class="separator-line"></span>
+                </div>
+                <div class="time-item">
+                    <div class="time-icon end">
+                        <i class="fas fa-flag-checkered"></i>
+                    </div>
+                    <div class="time-content">
+                        <span class="time-label">BİTİŞ</span>
+                        <span class="time-value">20 Aralık <span class="time-hour">12:00</span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-cta">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeqfkKN9U1Rwd0BO1-HVdOilYZlXWy0-BzhmKEBFYMlgfWxLw/viewform?usp=publish-editor" target="_blank" class="btn btn-primary">
+                    <span>Hemen Başvur</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#about" class="btn btn-secondary">
+                    <span>Detaylı Bilgi</span>
+                </a>
+            </div>
+            <div class="countdown-wrapper">
+                <h3>Yarışmaya Kalan Süre</h3>
+                <div class="countdown" id="countdown">
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="days">00</span>
+                        <span class="countdown-label">Gün</span>
+                    </div>
+                    <div class="countdown-separator">:</div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="hours">00</span>
+                        <span class="countdown-label">Saat</span>
+                    </div>
+                    <div class="countdown-separator">:</div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="minutes">00</span>
+                        <span class="countdown-label">Dakika</span>
+                    </div>
+                    <div class="countdown-separator">:</div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="seconds">00</span>
+                        <span class="countdown-label">Saniye</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Aşağı Kaydır</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header scroll-animate">
+                <span class="section-tag">Hakkında</span>
+                <h2 class="section-title">DATATHON 2025 Nedir?</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-card scroll-animate" data-delay="0">
+                    <div class="card-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3>Yarışmanın Konusu</h3>
+                    <p>Katılımcıların, yarışma esnasında verilen gerçek hayata yakın bir veri seti üzerinde; veri temizleme, analiz yapma, görselleştirme, modelleme ve sonuçları yorumlama gibi süreçleri yönettiği bir veri bilimi yarışmasıdır.</p>
+                </div>
+                <div class="about-card scroll-animate" data-delay="100">
+                    <div class="card-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Yarışmanın Amacı</h3>
+                    <p>Başta Veri Bilimi ve Analitiği Bölümü öğrencileri olmak üzere üniversite öğrencilerinin kendilerini geliştirmeleri ve sınamaları için planlanmıştır. Grup çalışması becerilerini ve problem çözme yeteneklerini deneyimlemeleri amaçlanmıştır.</p>
+                </div>
+                <div class="about-card scroll-animate" data-delay="200">
+                    <div class="card-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <h3>Organizatör</h3>
+                    <p>Manisa Celal Bayar Üniversitesi Veri Bilimi ve Analitiği Bölümü 2. Sınıf Öğrencileri tarafından organize edilmektedir.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rules Section -->
+    <section id="rules" class="rules">
+        <div class="container">
+            <div class="section-header scroll-animate">
+                <span class="section-tag">Şartname</span>
+                <h2 class="section-title">Yarışma Kuralları</h2>
+                <div class="title-underline"></div>
+            </div>
+            
+            <div class="rules-tabs">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-tab="participation">
+                        <i class="fas fa-user-check"></i>
+                        <span>Katılım Şartları</span>
+                    </button>
+                    <button class="tab-btn" data-tab="technical">
+                        <i class="fas fa-code"></i>
+                        <span>Teknik Kurallar</span>
+                    </button>
+                    <button class="tab-btn" data-tab="evaluation">
+                        <i class="fas fa-clipboard-check"></i>
+                        <span>Değerlendirme</span>
+                    </button>
+                    <button class="tab-btn" data-tab="disqualification">
+                        <i class="fas fa-ban"></i>
+                        <span>Diskalifiye</span>
+                    </button>
+                </div>
+                
+                <div class="tab-contents">
+                    <!-- Participation Tab -->
+                    <div class="tab-content active" id="participation">
+                        <div class="rules-list">
+                            <div class="rule-item">
+                                <div class="rule-number">01</div>
+                                <div class="rule-content">
+                                    <h4>Üniversite Katılımı</h4>
+                                    <p>Yarışmaya Manisa Celal Bayar Üniversitesi başta olmak üzere İzmir'deki tüm üniversitelerden katılım sağlanabilir. (Hazırlık, 1, 2 ve 3. sınıflar)</p>
+                                </div>
+                            </div>
+                            <div class="rule-item">
+                                <div class="rule-number">02</div>
+                                <div class="rule-content">
+                                    <h4>Takım Yapısı</h4>
+                                    <p>Yarışmaya takımlar halinde katılım sağlanabilir. Her takım en az 2, en fazla 4 kişiden oluşmalıdır.</p>
+                                </div>
+                            </div>
+                            <div class="rule-item">
+                                <div class="rule-number">03</div>
+                                <div class="rule-content">
+                                    <h4>Başvuru</h4>
+                                    <p>Başvurular yalnızca resmi web sitemiz üzerinden alınacaktır.</p>
+                                </div>
+                            </div>
+                            <div class="rule-item">
+                                <div class="rule-number">04</div>
+                                <div class="rule-content">
+                                    <h4>Öğrenci Belgesi</h4>
+                                    <p>Katılan tüm yarışmacılar, yarışma günü yanlarında öğrenci kartını getirmek zorundadır. (Öğrenci belgesi de kabul edilebilir)</p>
+                                </div>
+                            </div>
+                            <div class="rule-item">
+                                <div class="rule-number">05</div>
+                                <div class="rule-content">
+                                    <h4>Ekipman</h4>
+                                    <p>Yarışmacının, yarışma esnasında kullanacağı bilgisayar kendi sorumluluğunda olmalıdır.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Technical Tab -->
+                    <div class="tab-content" id="technical">
+                        <div class="rules-list">
+                            <div class="rule-item">
+                                <div class="rule-number">01</div>
+                                <div class="rule-content">
+                                    <h4>Kişisel Bilgisayar</h4>
+                                    <p>Her yarışmacı kendi kişisel bilgisayarını kullanacaktır.</p>
+                                </div>
+                            </div>
+                            <div class="rule-item">
+                                <div class="rule-number">02</div>
+                                <div class="rule-content">
+                                    <h4>Programlama Dilleri</h4>
+                                    <p>Yarışma boyunca tüm kodlar Python, R ve benzeri dillerle yazılabilir.</p>
+                                </div>
+                            </div>
+                            <div class="rule-item">
+                                <div class="rule-number">03</div>
+                                <div class="rule-content">
+                                    <h4>İnternet Kullanımı</h4>
+                                    <p>Projenin tamamını ya da bir kısmını internetten kopyalamak kesinlikle yasaktır. İnternet bağlantısını yalnızca paket kurulumları ve doküman okumalar için kullanabilirsiniz.</p>
+                                </div>
+                            </div>
+                            <div class="rule-item">
+                                <div class="rule-number">04</div>
+                                <div class="rule-content">
+                                    <h4>Orijinallik</h4>
+                                    <p>Yazılacak tüm kodlar ve yapılacak tüm görselleştirmeler yarışma esnasında oluşturulmuş olmalıdır.</p>
+                                </div>
+                            </div>
+                            <div class="rule-item">
+                                <div class="rule-number">05</div>
+                                <div class="rule-content">
+                                    <h4>Teslim Formatı</h4>
+                                    <p>Teslimler yapılırken Sunum Dosyası (PDF) + Kaynak Kodlar (.ipynb/.py) + Sonuç Dosyası (.csv) birlikte ziplenerek gönderilmelidir.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Evaluation Tab -->
+                    <div class="tab-content" id="evaluation">
+                        <div class="evaluation-grid">
+                            <div class="eval-card">
+                                <div class="eval-percentage">%20</div>
+                                <h4>Veri Analizi, Temizleme ve Ön İşleme</h4>
+                                <p>Eksik verilerin yönetimi, uç değer analizi ve doğru veri tiplerinin kullanımı değerlendirilecektir.</p>
+                            </div>
+                            <div class="eval-card">
+                                <div class="eval-percentage">%20</div>
+                                <h4>Keşifsel Veri Analizi ve Görselleştirme</h4>
+                                <p>Anlamlı grafiklerin kullanılması, doğru yorumlama ve veri öyküsünün yeterli şekilde kurulması değerlendirilecektir.</p>
+                            </div>
+                            <div class="eval-card featured">
+                                <div class="eval-percentage">%30</div>
+                                <h4>Modelleme</h4>
+                                <p>Doğru model seçimi, model performans ve metrik seçimi, ayrıca model karşılaştırma becerisinin doğru kullanılması değerlendirilecektir.</p>
+                            </div>
+                            <div class="eval-card">
+                                <div class="eval-percentage">%20</div>
+                                <h4>Sonuçların Raporlanması ve Sunum</h4>
+                                <p>Sunumun açık, anlaşılır ve akıcı olması, teknik bulguların sade ve etkili aktarımı değerlendirilecektir.</p>
+                            </div>
+                            <div class="eval-card">
+                                <div class="eval-percentage">%10</div>
+                                <h4>Kod Kalitesi</h4>
+                                <p>Kodların temiz, açıklayıcı ve tekrarsız olması beklenmektedir.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Disqualification Tab -->
+                    <div class="tab-content" id="disqualification">
+                        <div class="disqualification-list">
+                            <div class="disq-item">
+                                <i class="fas fa-times-circle"></i>
+                                <p>İnternetten ya da herhangi bir platformdan hazır veri kullanılması veya çözümlerin hazır olarak alınması</p>
+                            </div>
+                            <div class="disq-item">
+                                <i class="fas fa-times-circle"></i>
+                                <p>Yarışma esnasında herhangi iki takım arasında dosya alışverişi yapılması veya yardımlaşma</p>
+                            </div>
+                            <div class="disq-item">
+                                <i class="fas fa-times-circle"></i>
+                                <p>Yarışmada belirtilen kurallara ya da verilen süreye uymamak</p>
+                            </div>
+                            <div class="disq-item">
+                                <i class="fas fa-times-circle"></i>
+                                <p>Yarışmaya eksik ya da sahte belgeyle katılım sağlamaya çalışmak</p>
+                            </div>
+                            <div class="disq-item">
+                                <i class="fas fa-times-circle"></i>
+                                <p>Sunum dosyasını yönergede belirtilenler dışında herhangi bir yönlendirici kullanarak göndermek</p>
+                            </div>
+                            <div class="disq-item">
+                                <i class="fas fa-times-circle"></i>
+                                <p>Yarışma esnasında kopya çekildiği fark edilirse tüm çalışmalar geçersiz sayılır</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="timeline">
+        <div class="container">
+            <div class="section-header scroll-animate">
+                <span class="section-tag">Süreç</span>
+                <h2 class="section-title">Yarışma Süreci</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="timeline-wrapper">
+                <div class="timeline-line"></div>
+                <div class="timeline-item">
+                    <div class="timeline-dot">
+                        <i class="fas fa-door-open"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h4>Açılış</h4>
+                        <p>Kullanılacak veri setinin tüm yarışmacılarla paylaşılması</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h4>Analiz</h4>
+                        <p>Yarışmacıların veri setini analiz etmeye başlaması</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h4>Geliştirme</h4>
+                        <p>Belirtilen süre içerisinde istenen tüm adımların tamamlanması</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot">
+                        <i class="fas fa-upload"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h4>Teslim</h4>
+                        <p>PDF + Kaynak Kodlar (.ipynb/.py) + Sonuç Dosyası (.csv) birlikte ziplenerek gönderim</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot">
+                        <i class="fas fa-gavel"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h4>Değerlendirme</h4>
+                        <p>Jüri tarafından baştan sona inceleme ve değerlendirme</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h4>Sonuçlar</h4>
+                        <p>Kazananların açıklanması ve ödül töreni</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prizes Section -->
+    <section id="prizes" class="prizes">
+        <div class="container">
+            <div class="section-header scroll-animate">
+                <span class="section-tag">Ödüller</span>
+                <h2 class="section-title">Kazananlara Ödüller</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="prizes-grid">
+                <div class="prize-card silver">
+                    <div class="prize-badge">2</div>
+                    <div class="prize-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3>İkincilik Ödülü</h3>
+                    <div class="prize-value">Yakında Açıklanacak</div>
+                    <ul class="prize-perks">
+                        <li><i class="fas fa-check"></i> Sertifika</li>
+                        <li><i class="fas fa-check"></i> Ödül</li>
+                    </ul>
+                </div>
+                <div class="prize-card gold">
+                    <div class="prize-crown"><i class="fas fa-crown"></i></div>
+                    <div class="prize-badge">1</div>
+                    <div class="prize-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Birincilik Ödülü</h3>
+                    <div class="prize-value">Yakında Açıklanacak</div>
+                    <ul class="prize-perks">
+                        <li><i class="fas fa-check"></i> Sertifika</li>
+                        <li><i class="fas fa-check"></i> Büyük Ödül</li>
+                        <li><i class="fas fa-check"></i> Özel Hediyeler</li>
+                    </ul>
+                </div>
+                <div class="prize-card bronze">
+                    <div class="prize-badge">3</div>
+                    <div class="prize-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Üçüncülük Ödülü</h3>
+                    <div class="prize-value">Yakında Açıklanacak</div>
+                    <ul class="prize-perks">
+                        <li><i class="fas fa-check"></i> Sertifika</li>
+                        <li><i class="fas fa-check"></i> Ödül</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section id="register" class="register">
+        <div class="container">
+            <div class="section-header scroll-animate">
+                <span class="section-tag">Başvuru</span>
+                <h2 class="section-title">Yarışmaya Katıl</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="cta-wrapper">
+                <div class="cta-content">
+                    <div class="cta-info">
+                        <h3>Neden Katılmalısın?</h3>
+                        <div class="info-items">
+                            <div class="info-item">
+                                <div class="info-icon"><i class="fas fa-brain"></i></div>
+                                <div class="info-text">
+                                    <h4>Kendini Geliştir</h4>
+                                    <p>Gerçek dünya verileriyle çalışarak deneyim kazan</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-icon"><i class="fas fa-users"></i></div>
+                                <div class="info-text">
+                                    <h4>Takım Çalışması</h4>
+                                    <p>Grup çalışması ve iş birliği becerilerini geliştir</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-icon"><i class="fas fa-network-wired"></i></div>
+                                <div class="info-text">
+                                    <h4>Network</h4>
+                                    <p>Alanında uzman kişilerle tanışma fırsatı</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-icon"><i class="fas fa-certificate"></i></div>
+                                <div class="info-text">
+                                    <h4>Sertifika</h4>
+                                    <p>Katılım ve başarı sertifikası ile CV'ni güçlendir</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cta-action">
+                        <div class="cta-box">
+                            <div class="cta-dates">
+                                <div class="date-item">
+                                    <i class="fas fa-calendar-check"></i>
+                                    <div>
+                                        <span class="date-label">Son Başvuru</span>
+                                        <span class="date-value">12 Aralık 2025</span>
+                                    </div>
+                                </div>
+                                <div class="date-item">
+                                    <i class="fas fa-flag-checkered"></i>
+                                    <div>
+                                        <span class="date-label">Yarışma</span>
+                                        <span class="date-value">19 Aralık 08:00 - 20 Aralık 12:00</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeqfkKN9U1Rwd0BO1-HVdOilYZlXWy0-BzhmKEBFYMlgfWxLw/viewform?usp=publish-editor" target="_blank" class="cta-button">
+                                <span>Başvuru Formuna Git</span>
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <p class="cta-note"><i class="fas fa-info-circle"></i> Başvurular Google Forms üzerinden alınmaktadır.</p>
+                            <p class="cta-note"><i class="fas fa-info-circle"></i> Yalnızca ekip liderinin formu doldurması yeterlidir.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section">
+        <div class="container">
+            <div class="section-header scroll-animate">
+                <span class="section-tag"><i class="fas fa-question-circle"></i> SSS</span>
+                <h2 class="section-title">Sıkça Sorulan <span class="gradient-text">Sorular</span></h2>
+                <p class="section-desc">Merak ettiğiniz tüm sorulara yanıt bulun</p>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item scroll-animate" data-delay="0">
+                    <div class="faq-question">
+                        <span class="faq-icon"><i class="fas fa-users"></i></span>
+                        <h3>Kimler katılabilir?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Manisa ve İzmir'deki tüm üniversitelerin öğrencileri katılabilir. Takımlar minimum 2, maksimum 4 kişiden oluşmalı ve en az bir takım üyesi Manisa Celal Bayar Üniversitesi öğrencisi olmalıdır.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item scroll-animate" data-delay="100">
+                    <div class="faq-question">
+                        <span class="faq-icon"><i class="fas fa-laptop-code"></i></span>
+                        <h3>Hangi programlama dilleri kullanılabilir?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Python, R veya herhangi bir veri bilimi aracını kullanabilirsiniz. Jupyter Notebook, Google Colab gibi platformlar tercih edilebilir. Kütüphane kısıtlaması bulunmamaktadır.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item scroll-animate" data-delay="200">
+                    <div class="faq-question">
+                        <span class="faq-icon"><i class="fas fa-clock"></i></span>
+                        <h3>Yarışma ne kadar sürecek?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yarışma 19 Aralık 2025 saat 08:00'da başlayacak ve 20 Aralık 2025 saat 12:00'da sona erecektir. Toplam 28 saatlik yoğun bir maratona hazır olun!</p>
+                    </div>
+                </div>
+
+                <div class="faq-item scroll-animate" data-delay="300">
+                    <div class="faq-question">
+                        <span class="faq-icon"><i class="fas fa-database"></i></span>
+                        <h3>Veri seti önceden paylaşılacak mı?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Hayır, veri seti yarışma başladığında tüm takımlara aynı anda verilecektir. Bu sayede tüm takımlar eşit koşullarda yarışacaktır.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item scroll-animate" data-delay="400">
+                    <div class="faq-question">
+                        <span class="faq-icon"><i class="fas fa-trophy"></i></span>
+                        <h3>Ödüller nasıl dağıtılacak?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Ödüller sürenin sonunda açıklanacaktır. Yarışma bittikten sonraki gün kazanan kişilerle iletişime geçilerek teslim edilecektir.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item scroll-animate" data-delay="500">
+                    <div class="faq-question">
+                        <span class="faq-icon"><i class="fas fa-map-marker-alt"></i></span>
+                        <h3>Yarışma online mı yoksa yüz yüze mi?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yarışma yalnızca yüz yüze gerçekleşecektir. Tüm katılımcıların MCBÜ Öğrenci Merkezi'nde bulunması gerekmektedir.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item scroll-animate" data-delay="600">
+                    <div class="faq-question">
+                        <span class="faq-icon"><i class="fas fa-graduation-cap"></i></span>
+                        <h3>Veri bilimi tecrübem yok, katılabilir miyim?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Evet! Datathon, öğrenmek için harika bir fırsat. Takımınızda deneyimli üyeler olabilir ve yarışma süresince mentorluk desteği alabilirsiniz.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-wave">
+            <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+                <path d="M0,50 C150,100 350,0 500,50 C650,100 800,0 1000,50 C1200,100 1350,0 1440,50 L1440,100 L0,100 Z"></path>
+            </svg>
+        </div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-icon"><i class="fas fa-database"></i></span>
+                        <span class="logo-text">DATA<span class="highlight">THON</span> 2025</span>
+                    </div>
+                    <p>Manisa Celal Bayar Üniversitesi<br>Veri Bilimi ve Analitiği Bölümü</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Hızlı Bağlantılar</h4>
+                    <ul>
+                        <li><a href="#about">Hakkında</a></li>
+                        <li><a href="#rules">Şartname</a></li>
+                        <li><a href="#timeline">Süreç</a></li>
+                        <li><a href="#prizes">Ödüller</a></li>
+                        <li><a href="#faq">SSS</a></li>
+                        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeqfkKN9U1Rwd0BO1-HVdOilYZlXWy0-BzhmKEBFYMlgfWxLw/viewform?usp=publish-editor" target="_blank">Başvuru</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>İletişim</h4>
+                    <ul>
+                        <li><a href="mailto:datathon2025mcbu@gmail.com"><i class="fas fa-envelope"></i> datathon2025mcbu@gmail.com</a></li>
+                        <li><i class="fas fa-map-marker-alt"></i> MCBÜ Öğrenci Merkezi, Manisa Celal Bayar Üniversitesi</li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Sosyal Medya</h4>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/mcbudatathon?igsh=MTR2OHdic211bjRyag==" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 DATATHON - Tüm Hakları Saklıdır</p>
+                <p class="credits">Veri Bilimi ve Analitiği 2. Sınıf Öğrencileri tarafından hazırlanmıştır</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
