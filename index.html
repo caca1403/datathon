@@ -564,64 +564,191 @@
     <section id="timeline" class="timeline">
         <div class="container">
             <div class="section-header scroll-animate">
-                <span class="section-tag">Süreç</span>
-                <h2 class="section-title">Yarışma Süreci</h2>
-                <div class="title-underline"></div>
+                <span class="section-tag"><i class="fas fa-calendar-alt"></i> Program</span>
+                <h2 class="section-title">Etkinlik <span class="gradient-text">Programı</span></h2>
+                <p class="section-desc">28 saatlik yoğun bir maratona hazır olun!</p>
             </div>
-            <div class="timeline-wrapper">
-                <div class="timeline-line"></div>
-                <div class="timeline-item">
-                    <div class="timeline-dot">
-                        <i class="fas fa-door-open"></i>
+            
+            <!-- Day 1 -->
+            <div class="schedule-day scroll-animate">
+                <div class="day-header">
+                    <div class="day-badge">1. GÜN</div>
+                    <h3>Başlangıç ve Geliştirme</h3>
+                    <span class="day-date">19 Aralık 2025</span>
+                </div>
+                
+                <div class="schedule-grid">
+                    <div class="schedule-item highlight">
+                        <div class="schedule-time">
+                            <i class="fas fa-rocket"></i>
+                            <span>09:00 - 09:30</span>
+                        </div>
+                        <div class="schedule-content">
+                            <h4>Açılış Töreni ve Veri Seti Lansmanı</h4>
+                            <ul>
+                                <li>Açılış konuşmaları</li>
+                                <li>Sponsor firma sunumu</li>
+                                <li>Veri setinin paylaşılması ve Case Study ilanı</li>
+                                <li>Soru - Cevap oturumu</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="timeline-content">
-                        <h4>Açılış</h4>
-                        <p>Kullanılacak veri setinin tüm yarışmacılarla paylaşılması</p>
+                    
+                    <div class="schedule-item">
+                        <div class="schedule-time">
+                            <i class="fas fa-database"></i>
+                            <span>09:30 - 11:30</span>
+                        </div>
+                        <div class="schedule-content">
+                            <h4>1. Kodlama Oturumu</h4>
+                            <p>Veri Analizi & Ön İşleme - Takımların veriyi tanıması ve temizleme aşaması</p>
+                        </div>
+                    </div>
+                    
+                    <div class="schedule-item break">
+                        <div class="schedule-time">
+                            <i class="fas fa-utensils"></i>
+                            <span>11:30 - 13:30</span>
+                        </div>
+                        <div class="schedule-content">
+                            <h4>Öğle Yemeği Arası</h4>
+                            <p>Kodlama devam edebilir, yemek servisi bu aralıktadır</p>
+                        </div>
+                    </div>
+                    
+                    <div class="schedule-item">
+                        <div class="schedule-time">
+                            <i class="fas fa-brain"></i>
+                            <span>13:30 - 19:00</span>
+                        </div>
+                        <div class="schedule-content">
+                            <h4>2. Kodlama Oturumu - Modelleme</h4>
+                            <p>Derin çalışma zamanı (Deep Work) ve Mentor destek turları</p>
+                        </div>
+                    </div>
+                    
+                    <div class="schedule-item break">
+                        <div class="schedule-time">
+                            <i class="fas fa-moon"></i>
+                            <span>19:00 - 20:00</span>
+                        </div>
+                        <div class="schedule-content">
+                            <h4>Akşam Yemeği Molası</h4>
+                        </div>
+                    </div>
+                    
+                    <div class="schedule-item">
+                        <div class="schedule-time">
+                            <i class="fas fa-cogs"></i>
+                            <span>20:00 - 00:00</span>
+                        </div>
+                        <div class="schedule-content">
+                            <h4>3. Kodlama Oturumu - Optimizasyon</h4>
+                            <p>Modellerin iyileştirilmesi ve sonuçların test edilmesi</p>
+                        </div>
                     </div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot">
-                        <i class="fas fa-search"></i>
+            </div>
+            
+            <!-- Night Marathon -->
+            <div class="schedule-day scroll-animate night-session">
+                <div class="day-header">
+                    <div class="day-badge night">GECE</div>
+                    <h3>Maraton (Overnight)</h3>
+                    <span class="day-date">19-20 Aralık 2025</span>
+                </div>
+                
+                <div class="schedule-grid">
+                    <div class="schedule-item break">
+                        <div class="schedule-time">
+                            <i class="fas fa-cookie-bite"></i>
+                            <span>00:00 - 01:00</span>
+                        </div>
+                        <div class="schedule-content">
+                            <h4>Gece İkramı (Midnight Snack)</h4>
+                            <p>Çorba / Atıştırmalık molası</p>
+                        </div>
                     </div>
-                    <div class="timeline-content">
-                        <h4>Analiz</h4>
-                        <p>Yarışmacıların veri setini analiz etmeye başlaması</p>
+                    
+                    <div class="schedule-item">
+                        <div class="schedule-time">
+                            <i class="fas fa-fire"></i>
+                            <span>01:00 - 06:00</span>
+                        </div>
+                        <div class="schedule-content">
+                            <h4>4. Kodlama Oturumu - Final Sprint</h4>
+                            <p>Sonuçların raporlanması ve sunum dosyalarının hazırlanması</p>
+                        </div>
+                    </div>
+                    
+                    <div class="schedule-item break">
+                        <div class="schedule-time">
+                            <i class="fas fa-coffee"></i>
+                            <span>06:00 - 06:30</span>
+                        </div>
+                        <div class="schedule-content">
+                            <h4>Sabah Kahvaltısı</h4>
+                            <p>Güne başlangıç ikramları (Simit, poğaça, çay)</p>
+                        </div>
+                    </div>
+                    
+                    <div class="schedule-item highlight warning">
+                        <div class="schedule-time">
+                            <i class="fas fa-snowflake"></i>
+                            <span>06:30 - 07:00</span>
+                        </div>
+                        <div class="schedule-content">
+                            <h4>Code Freeze (Kod Dondurma)</h4>
+                            <p>Proje teslimlerinin sisteme yüklenmesi ve sunum provaları. <strong>07:00 itibarıyla sistem kapanır!</strong></p>
+                        </div>
                     </div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot">
-                        <i class="fas fa-code"></i>
-                    </div>
-                    <div class="timeline-content">
-                        <h4>Geliştirme</h4>
-                        <p>Belirtilen süre içerisinde istenen tüm adımların tamamlanması</p>
-                    </div>
+            </div>
+            
+            <!-- Day 2 -->
+            <div class="schedule-day scroll-animate">
+                <div class="day-header">
+                    <div class="day-badge">2. GÜN</div>
+                    <h3>Final ve Ödül</h3>
+                    <span class="day-date">20 Aralık 2025</span>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot">
-                        <i class="fas fa-upload"></i>
+                
+                <div class="schedule-grid">
+                    <div class="schedule-item">
+                        <div class="schedule-time">
+                            <i class="fas fa-microphone"></i>
+                            <span>07:00 - 09:00</span>
+                        </div>
+                        <div class="schedule-content">
+                            <h4>Proje Sunumları (Pitching)</h4>
+                            <p>Takımların jüri önünde 5'er dakikalık sunumlarını gerçekleştirmesi</p>
+                        </div>
                     </div>
-                    <div class="timeline-content">
-                        <h4>Teslim</h4>
-                        <p>PDF + Kaynak Kodlar (.ipynb/.py) + Sonuç Dosyası (.csv) birlikte ziplenerek gönderim</p>
+                    
+                    <div class="schedule-item">
+                        <div class="schedule-time">
+                            <i class="fas fa-users"></i>
+                            <span>09:00 - 12:00</span>
+                        </div>
+                        <div class="schedule-content">
+                            <h4>Jüri Değerlendirmesi ve Networking</h4>
+                            <p>Jüri üyelerinin projeleri incelemesi, katılımcılar için serbest zaman ve dinlenme</p>
+                        </div>
                     </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot">
-                        <i class="fas fa-gavel"></i>
-                    </div>
-                    <div class="timeline-content">
-                        <h4>Değerlendirme</h4>
-                        <p>Jüri tarafından baştan sona inceleme ve değerlendirme</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot">
-                        <i class="fas fa-trophy"></i>
-                    </div>
-                    <div class="timeline-content">
-                        <h4>Sonuçlar</h4>
-                        <p>Kazananların açıklanması ve ödül töreni</p>
+                    
+                    <div class="schedule-item highlight final">
+                        <div class="schedule-time">
+                            <i class="fas fa-trophy"></i>
+                            <span>12:00 - 12:30</span>
+                        </div>
+                        <div class="schedule-content">
+                            <h4>Ödül Töreni ve Kapanış</h4>
+                            <ul>
+                                <li>Kazananların açıklanması</li>
+                                <li>Ödüllerin takdimi</li>
+                                <li>Kapanış konuşması ve fotoğraf çekimi</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
